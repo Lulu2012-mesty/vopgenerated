@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vop Tools: Multi-Poopism & Lost Media Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Vop Tools</h1>
+    <nav>
+      <button onclick="showTool('ytp')">YTP/YTPMV</button>
+      <button onclick="showTool('mashup')">Mashup/Meme/Remix</button>
+      <button onclick="showTool('doubler')">YouTube Doubler/Mashup/Mirror/Compare</button>
+      <button onclick="showTool('annoy')">Annoying Goose/Fun</button>
+      <button onclick="showTool('lostmedia')">Lost Media/Wayback</button>
+      <button onclick="showTool('random')">Randomizer & Download</button>
+      <button onclick="showTool('vop')">All Vop Tools</button>
+    </nav>
+  </header>
+  <main>
+    <section id="ytp" class="tool-section">
+      <h2>YTP/YTPMV Tennis Tool</h2>
+      <div>
+        <label>YouTube URL: <input type="text" id="ytp-url"></label>
+        <button onclick="generateYtpPoopism()">Generate Poopism</button>
+      </div>
+      <div id="ytp-output"></div>
+    </section>
+    <section id="mashup" class="tool-section" style="display:none">
+      <h2>Mashup/Meme/Remix/Kids Remix</h2>
+      <button onclick="generateMashup()">Generate Mashup Meme</button>
+      <div id="mashup-output"></div>
+    </section>
+    <section id="doubler" class="tool-section" style="display:none">
+      <h2>YouTube Doubler/Mashup/Mirror/Comparison</h2>
+      <label>First YouTube URL: <input type="text" id="doubler-url1"></label>
+      <label>Second YouTube URL: <input type="text" id="doubler-url2"></label>
+      <button onclick="doubleVideos()">Play Both</button>
+      <div id="doubler-output"></div>
+    </section>
+    <section id="annoy" class="tool-section" style="display:none">
+      <h2>Annoying Goose / Fun Stuff</h2>
+      <button onclick="annoyingGoose()">Unleash Goose</button>
+      <div id="goose-output"></div>
+    </section>
+    <section id="lostmedia" class="tool-section" style="display:none">
+      <h2>Lost Media Wayback Search</h2>
+      <label>Enter URL or Keywords: <input type="text" id="lostmedia-query"></label>
+      <button onclick="searchWayback()">Search Wayback</button>
+      <div id="lostmedia-output"></div>
+    </section>
+    <section id="random" class="tool-section" style="display:none">
+      <h2>Random Download/YouTube Kids</h2>
+      <button onclick="randomDownloadLink()">Random Download Link</button>
+      <button onclick="randomYouTubeKidsLink()">Random YouTube Kids Link</button>
+      <div id="random-output"></div>
+    </section>
+    <section id="vop" class="tool-section" style="display:none">
+      <h2>All Vop Tools: Multi-Poopism Function</h2>
+      <button onclick="runAllVopTools()">Run Everything!</button>
+      <div id="vop-output"></div>
+    </section>
+  </main>
+  <footer>
+    <p>Made with ❤️ for creative remixers! | <a href="https://github.com/yourusername/vop-tools">GitHub</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
